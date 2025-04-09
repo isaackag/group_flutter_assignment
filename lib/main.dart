@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:group_flutter_assignment/pages/landing_page.dart';
-import 'package:group_flutter_assignment/pages/landing_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,5 +15,4 @@ class MyApp extends StatelessWidget {
       home: LandingPage(),
     );
   }
-}  
-  
+}
