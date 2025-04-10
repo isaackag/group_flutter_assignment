@@ -6,7 +6,14 @@ class ImageWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Expanded(
-      child: Container(
+      child: 
+      GestureDetector(
+          onTap: ()  {
+                setState((){
+                   Navigator.pushNamed(context, '/attraction_details_page');
+                } as ());
+                },
+        child: Container(
         padding: const EdgeInsets.all(50),
         decoration: BoxDecoration(
           border: Border.all(
@@ -21,6 +28,11 @@ class ImageWidget extends StatelessWidget {
           ),
         ),
       ),
+      )
+      
+      
     );
   }
+  
+  void setState(() param0) {}
 }

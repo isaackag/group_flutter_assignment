@@ -5,6 +5,18 @@ class AttractionDetailsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        // Custom back button
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.pop(context); // This takes you back to the previous page
+          },
+        ),
+        title: Text('Attraction Details Page'),
+      ),
+    );
   }
 }
+
