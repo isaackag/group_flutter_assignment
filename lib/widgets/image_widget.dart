@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:group_flutter_assignment/pages/attraction_details_page.dart';
 
 class ImageWidget extends StatelessWidget {
   const ImageWidget({super.key});
@@ -9,9 +10,7 @@ class ImageWidget extends StatelessWidget {
       child: 
       GestureDetector(
           onTap: ()  {
-                setState((){
-                   Navigator.pushNamed(context, '/attraction_details_page');
-                } as ());
+               Navigator.push(context, MaterialPageRoute(builder: (context) => AttractionDetailsPage()));
                 },
         child: Container(
         padding: const EdgeInsets.all(50),
