@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:group_flutter_assignment/pages/landing_page.dart';
 import 'package:group_flutter_assignment/pages/attraction_details.dart';
 import 'package:group_flutter_assignment/pages/main_page.dart';
 
@@ -12,6 +13,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: LandingPage(),
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Back Button Demo',
