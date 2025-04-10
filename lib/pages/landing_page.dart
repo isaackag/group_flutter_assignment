@@ -5,6 +5,16 @@ class LandingPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: Container(
+        padding: EdgeInsets.all(10),
+        child: Column(
+          children: [
+            SizedBox(height: 50),
+            SearchBar(leading: Icon(Icons.search), hintText: "Search"),
+          ],
+        ),
+      ),
+    );
   }
 }
