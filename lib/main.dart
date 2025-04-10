@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:group_flutter_assignment/pages/landing_page.dart';
+import 'package:group_flutter_assignment/pages/attraction_details_page.dart';
+import 'package:group_flutter_assignment/pages/landing_page.dart'; 
 
+// Main app
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -10,9 +12,14 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(  
       debugShowCheckedModeBanner: false,
-      home: LandingPage(),
+      title: 'Back Button Demo',
+      initialRoute: '/',
+      routes: {
+        '/': (context) => LandingPage(),
+        '/second': (context) => AttractionDetailsPage(),
+      },
     );
   }
 }
